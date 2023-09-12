@@ -7,7 +7,7 @@ function Movie() {
     <div className="center">
       <div className="movies-title">
         <p>Featured Movie</p>
-        <a href="#">See more</a>
+        <a href="https://google.com">See more</a>
       </div>
 
       <MovieList />

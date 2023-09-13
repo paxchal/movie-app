@@ -24,7 +24,7 @@ function Header() {
           <div className="right-region">
             <p>Sign in</p>
             <div>
-              <a href="#">
+              <a href="https://google.com">
                 <img src={Menu} alt="Menu Icon" />
               </a>
             </div>

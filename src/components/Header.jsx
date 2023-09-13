@@ -1,8 +1,7 @@
 import React from "react";
-import Poster from "../images/Poster.png";
 
 import logo from "../icons/Logo.png";
-import Search from "../icons/search-icon.png";
+
 import Menu from "../icons/Menu.png";
 import Rating from "../icons/Rating.png";
 import Play from "../icons/icon-play.png";
@@ -45,7 +44,7 @@ function Header() {
               </p>
             </div>
             <div>
-              <a className="btn" href="#">
+              <a className="btn" href="https://youtube.com">
                 <div>
                   <img className="play-icon" src={Play} alt="Play Icon" />
                 </div>

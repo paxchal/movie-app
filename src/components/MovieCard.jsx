@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import MovieRating from "../icons/movie-rating.png";
+import { Link } from "react-router-dom";
 
 class MovieCard extends Component {
   render() {
@@ -35,6 +36,7 @@ class MovieCard extends Component {
         <p className="release-date" data-testid="movie-release-date">
           Release Date: {movie.release_date}
         </p>
+        <Link to={`/movie/${movie.id}`}>View Details</Link>
       </div>
     );
   }

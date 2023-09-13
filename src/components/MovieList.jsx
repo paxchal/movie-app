@@ -19,7 +19,7 @@ function MovieList() {
 
   return (
     <div>
-      <ul className="movie-card-li">
+      <ul className="movie-card-li ">
         {movieList.map((movie) => (
           <MovieCard key={movie.id} movie={movie} /> // Pass the movie object as a prop
         ))}

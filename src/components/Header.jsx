@@ -46,13 +46,13 @@ function Header() {
               </p>
             </div>
             <div>
-              <a className="btn" href="https://youtube.com">
+              <button className="btn">
                 <div>
                   <img className="play-icon" src={Play} alt="Play Icon" />
                 </div>
 
                 <p>WATCH TRAILER</p>
-              </a>
+              </button>
             </div>
           </div>
           <div></div>

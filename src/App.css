@@ -106,14 +106,14 @@ header {
   line-height: 1.8rem;
 }
 
-.btn:link,
-.btn:active {
+.btn {
   color: #ffffff;
+  border: none;
   display: flex;
   align-items: center;
   gap: 0.8rem;
   justify-content: center;
-  text-decoration: none;
+
   background-color: #be123c;
 
   padding: 0.6rem, 1.6rem;
@@ -121,6 +121,7 @@ header {
   width: 16.9rem;
   height: 3.6rem;
   border-radius: 0.6rem;
+  cursor: pointer;
 }
 
 .play-icon {

@@ -6,6 +6,9 @@ import MovieProjector from "../icons/Movie Projector.png";
 import TvShow from "../icons/TV Show.png";
 import Calendar from "../icons/Calendar.png";
 import Logout from "../icons/Logout.png";
+import Star from "../icons/Star.png";
+import TwoTickets from "../icons/Two Tickets.png";
+import List from "../icons/List.png";
 
 const API_KEY = "768c9eea124bf8e5fb36fd9b917a9974";
 const API_URL = "https://api.themoviedb.org/3/movie/";
@@ -116,23 +119,49 @@ function MovieDetails() {
             )}
           </div>
           <p className="movie-details-title">{movieDetails.title}</p>
-          <p className="movie-detail-rating">
-            Rating: <span>{movieDetails.vote_average} </span>/ 10
+          <p className="movie-details-rating">
+            <span>
+              <img className="star-icon" src={Star} alt="Star Icon" />
+            </span>
+            <span>{movieDetails.vote_average} </span>| 10{" "}
           </p>
           <div className="movie-desctiption">{movieDetails.overview}</div>
-          <div className="showtimes-btn-cnt">SEE SHOWTIME</div>
-          <div className="more-btn-cnt"> MORE WATCH OPTION</div>
+          <div className="showtimes-btn-cnt ">
+            <button className="btn btn-movie-details btn-dark">
+              <span>
+                <img
+                  className="ticket-icon"
+                  src={TwoTickets}
+                  alt="Two Tickets Icon"
+                />
+              </span>
+              See Showtimes
+            </button>
+          </div>
+          <div className="more-btn-cnt">
+            <button className="btn btn-movie-details btn-light">
+              <span>
+                <img className="list-icon" src={List} alt="List Icon" />
+              </span>
+              More watch options
+            </button>
+          </div>
           <div className="movie-director">
-            DIRECTOR {director ? director.name : "Not available"}
+            Director: <span>{director ? director.name : "Not available"}</span>
           </div>
           <div className="sugessted-movies">IMAGES</div>
           <div className="movie-writer">
-            Writer: {writer ? writer.name : "Not available"}
+            Writer: <span>{writer ? writer.name : "Not available"}</span>
           </div>
           <div className="movie-stars">
-            Stars: {stars.map((star) => star.name).join(", ")}
+            Stars: <span>{stars.map((star) => star.name).join(", ")}</span>
           </div>
-          <div className="movie-top-position">BUTTON</div>
+          <div className="movie-top-position ">
+            <button className="btn btn-movie-details btn-dark">
+              Top rated movies #65
+            </button>{" "}
+            <button>Awards 9 nominations</button>
+          </div>
         </div>
       </article>
     </section>

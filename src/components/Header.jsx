@@ -46,7 +46,7 @@ function Header() {
               </p>
             </div>
             <div>
-              <button className="btn">
+              <button className="btn btn-home btn-dark">
                 <div>
                   <img className="play-icon" src={Play} alt="Play Icon" />
                 </div>

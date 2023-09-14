@@ -109,21 +109,41 @@ header {
 .btn {
   color: #ffffff;
   border: none;
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  justify-content: center;
-
-  background-color: #be123c;
 
   padding: 0.6rem, 1.6rem;
-  font-size: 1.4rem;
-  width: 16.9rem;
-  height: 3.6rem;
+
   border-radius: 0.6rem;
   cursor: pointer;
 }
+.btn-home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 16.9rem;
+  height: 3.6rem;
+  font-size: 1.4rem;
+}
+.btn-movie-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
 
+  height: 3.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  flex: 1;
+}
+
+.btn-dark {
+  background-color: #be123c;
+}
+.btn-light {
+  background-color: rgba(190, 18, 61, 0.103);
+  color: #333333;
+  font-weight: 500;
+}
 .play-icon {
   width: 1.5rem;
 }
@@ -241,6 +261,7 @@ footer {
   display: grid;
   grid-template-columns: 10rem 1fr;
   justify-items: center;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -248,7 +269,6 @@ nav {
   flex-direction: column;
   gap: 4.8rem;
   border: solid 1px #b3b1b1;
-  font-family: "Poppins", sans-serif;
 
   border-top-right-radius: 4.5rem;
   border-bottom-right-radius: 4.5rem;
@@ -344,7 +364,9 @@ nav ul li:hover {
 
 .section-movie-details {
   display: grid;
+  align-items: center;
   grid-template-columns: 2fr 1fr;
+  row-gap: 0.8rem;
   padding: 0 2.4rem;
   margin-top: 2.4rem;
   max-width: 70rem;
@@ -365,26 +387,53 @@ nav ul li:hover {
   font-size: 2.3rem;
   font-weight: 700;
 }
-.movie-detail-rating {
+.movie-details-rating {
   font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.4rem;
+  color: #333333;
+  font-weight: 600;
 }
-.movie-detail-rating span {
-  color: #a39f9f;
-  font-size: 1.2rem;
+
+.star-icon {
+  width: 1.6rem;
+}
+.movie-details-rating span {
+  color: #c2bfbf;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
 }
 .movie-desctiption {
   grid-row: 3 / 5;
 
-  background-color: #5cb446;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #333333;
 }
 .showtimes-btn-cnt {
-  background-color: #8e9197;
+  display: flex;
+}
+.ticket-icon {
+  width: 1.4rem;
 }
 .more-btn-cnt {
-  background-color: #e26763;
+  display: flex;
+}
+.list-icon {
+  width: 1.4rem;
 }
 .movie-director {
-  background-color: #cc7cad;
+  color: #333333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.movie-director span {
+  color: #be123c;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .sugessted-movies {
   background-color: #995cd3;
@@ -392,11 +441,26 @@ nav ul li:hover {
   grid-row: 5 / 9;
 }
 .movie-writer {
-  background-color: #6b7280;
+  color: #333333;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.movie-writer span {
+  color: #be123c;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .movie-stars {
-  background-color: #e97161;
+  color: #333333;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.movie-stars span {
+  color: #be123c;
+  font-size: 1rem;
+  font-weight: 500;
 }
 .movie-top-position {
-  background-color: #52acac;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }

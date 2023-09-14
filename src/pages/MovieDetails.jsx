@@ -154,7 +154,7 @@ function MovieDetails() {
             <img
               className="suggested-movies-img"
               src={SuggestedMovies}
-              alt="Suggested Movies Image"
+              alt="Suggested Movies "
             />
           </div>
           <div className="movie-writer">

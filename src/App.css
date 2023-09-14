@@ -367,6 +367,7 @@ nav ul li:hover {
   align-items: center;
   grid-template-columns: 2fr 1fr;
   row-gap: 0.8rem;
+  column-gap: 0.8rem;
   padding: 0 2.4rem;
   margin-top: 2.4rem;
   max-width: 70rem;

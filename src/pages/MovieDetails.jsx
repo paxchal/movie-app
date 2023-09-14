@@ -9,6 +9,7 @@ import Logout from "../icons/Logout.png";
 import Star from "../icons/Star.png";
 import TwoTickets from "../icons/Two Tickets.png";
 import List from "../icons/List.png";
+import SuggestedMovies from "../icons/Suggested movie.png";
 
 const API_KEY = "768c9eea124bf8e5fb36fd9b917a9974";
 const API_URL = "https://api.themoviedb.org/3/movie/";
@@ -126,7 +127,7 @@ function MovieDetails() {
             <span>{movieDetails.vote_average} </span>| 10{" "}
           </p>
           <div className="movie-desctiption">{movieDetails.overview}</div>
-          <div className="showtimes-btn-cnt ">
+          <div className="movie-details-cta-cnt ">
             <button className="btn btn-movie-details btn-dark">
               <span>
                 <img
@@ -137,8 +138,7 @@ function MovieDetails() {
               </span>
               See Showtimes
             </button>
-          </div>
-          <div className="more-btn-cnt">
+
             <button className="btn btn-movie-details btn-light">
               <span>
                 <img className="list-icon" src={List} alt="List Icon" />
@@ -146,10 +146,17 @@ function MovieDetails() {
               More watch options
             </button>
           </div>
+
           <div className="movie-director">
             Director: <span>{director ? director.name : "Not available"}</span>
           </div>
-          <div className="sugessted-movies">IMAGES</div>
+          <div className="sugessted-movies">
+            <img
+              className="suggested-movies-img"
+              src={SuggestedMovies}
+              alt="Suggested Movies Image"
+            />
+          </div>
           <div className="movie-writer">
             Writer: <span>{writer ? writer.name : "Not available"}</span>
           </div>
@@ -159,7 +166,7 @@ function MovieDetails() {
           <div className="movie-top-position ">
             <button className="btn btn-movie-details btn-dark">
               Top rated movies #65
-            </button>{" "}
+            </button>
             <button>Awards 9 nominations</button>
           </div>
         </div>

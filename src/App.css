@@ -110,7 +110,7 @@ header {
   color: #ffffff;
   border: none;
 
-  padding: 0.6rem, 1.6rem;
+  padding: 1rem 0;
 
   border-radius: 0.6rem;
   cursor: pointer;
@@ -120,8 +120,9 @@ header {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  width: 16.9rem;
-  height: 3.6rem;
+
+  padding: 1rem 2.4rem;
+
   font-size: 1.4rem;
 }
 .btn-movie-details {
@@ -130,7 +131,6 @@ header {
   justify-content: center;
   gap: 0.8rem;
 
-  height: 3.6rem;
   font-size: 1rem;
   font-weight: 500;
   flex: 1;
@@ -407,21 +407,21 @@ nav ul li:hover {
   align-items: center;
 }
 .movie-desctiption {
-  grid-row: 3 / 5;
+  grid-row: 3 / 4;
 
   font-size: 1.2rem;
   line-height: 2rem;
   color: #333333;
 }
-.showtimes-btn-cnt {
+.movie-details-cta-cnt {
   display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 .ticket-icon {
   width: 1.4rem;
 }
-.more-btn-cnt {
-  display: flex;
-}
+
 .list-icon {
   width: 1.4rem;
 }
@@ -436,9 +436,11 @@ nav ul li:hover {
   font-weight: 500;
 }
 .sugessted-movies {
-  background-color: #995cd3;
   grid-column: 2/-1;
-  grid-row: 5 / 9;
+  grid-row: 4 / 8;
+}
+.suggested-movies-img {
+  width: 100%;
 }
 .movie-writer {
   color: #333333;

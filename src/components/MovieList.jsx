@@ -6,7 +6,7 @@ function MovieList() {
 
   const getMovies = () => {
     fetch(
-      "https://api.themoviedb.org/3/discover/movie?api_key=768c9eea124bf8e5fb36fd9b917a9974"
+      `https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}`
     )
       .then((res) => res.json())
       .then((json) => setMovieList(json.results.slice(0, 10)))

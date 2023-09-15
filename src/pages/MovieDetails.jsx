@@ -8,7 +8,7 @@ import SuggestedMovies from "../icons/Suggested movie.png";
 import ExpandArrow from "../icons/Expand Arrow.png";
 import MenuBar from "../components/MenuBar";
 
-const API_KEY = "768c9eea124bf8e5fb36fd9b917a9974";
+const API_KEY = `${process.env.REACT_APP_API_KEY}`;
 const API_URL = "https://api.themoviedb.org/3/movie/";
 
 function MovieDetails() {

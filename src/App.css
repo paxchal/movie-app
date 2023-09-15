@@ -34,6 +34,10 @@ header {
   height: 8rem;
 }
 
+.main-logo {
+  width: 18rem;
+}
+
 .search-region {
   flex: 1;
   max-width: 40rem;
@@ -538,6 +542,9 @@ nav ul li:hover {
   body {
     font-size: 50%;
   }
+  .main-logo {
+    width: 16rem;
+  }
 }
 
 @media (max-width: 980px) {
@@ -589,6 +596,21 @@ nav ul li:hover {
 
   .see-more {
     font-size: 1.6rem;
+  }
+
+  .title-head {
+    font-size: 4.2rem;
+    line-height: 5rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+  }
+  .btn-home {
+    font-size: 1.2rem;
+  }
+  .main-logo {
+    width: 14rem;
   }
 }
 
@@ -646,6 +668,21 @@ nav ul li:hover {
   .see-more {
     font-size: 1.4rem;
   }
+
+  .title-head {
+    font-size: 4rem;
+    line-height: 4.8rem;
+  }
+
+  .description {
+    font-size: 1.2rem;
+  }
+  .btn-home {
+    font-size: 1.1rem;
+  }
+  .main-logo {
+    width: 13rem;
+  }
 }
 
 @media (max-width: 760px) {
@@ -697,5 +734,26 @@ nav ul li:hover {
   }
   .featured-movie {
     font-size: 2.4rem;
+  }
+
+  .title-head {
+    font-size: 3.8rem;
+    line-height: 4.8rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+  }
+  .btn-home {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .movie-card-li {
+    grid-template-columns: 1fr;
+  }
+  .featured-movie {
+    font-size: 2rem;
   }
 }

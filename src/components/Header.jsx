@@ -12,7 +12,7 @@ function Header() {
       <div className="Header-cnt">
         <div className="top-bar center">
           <div>
-            <img src={logo} alt="Movie Logo" />
+            <img className="main-logo" src={logo} alt="Movie Logo" />
           </div>
           <div className="search-region">
             <input

@@ -953,6 +953,15 @@ nav ul li:hover {
   }
 }
 
+@media (max-width: 400px) {
+  .nav-region {
+    display: none;
+  }
+  .section-movie-nav {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 450px) {
   .movie-top-position {
     grid-template-columns: 1fr;
@@ -971,8 +980,6 @@ nav ul li:hover {
   }
 }
 
-/* 
-
 @media (max-width: 320px) {
   .hero {
     grid-template-columns: 18rem 1fr;
@@ -985,4 +992,4 @@ nav ul li:hover {
   .see-more {
     font-size: 0.8rem;
   }
-} */
+}

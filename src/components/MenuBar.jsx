@@ -8,7 +8,7 @@ import Logout from "../icons/Logout.png";
 
 function MenuBar() {
   return (
-    <div>
+    <div className="nav-region">
       <nav>
         <section>
           <img className="nav-logo" src={logoBlack} alt="Movie Logo Black" />

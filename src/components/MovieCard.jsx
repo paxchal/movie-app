@@ -36,7 +36,11 @@ class MovieCard extends Component {
         <p className="release-date" data-testid="movie-release-date">
           Release Date: {movie.release_date}
         </p>
-        <Link to={`/movie/${movie.id}`}>View Details</Link>
+        <div className="link-container">
+          <Link to={`/movie/${movie.id}`} className="view-movie-details">
+            View Movie Details
+          </Link>
+        </div>
       </div>
     );
   }

@@ -23,7 +23,7 @@ function Footer() {
       </div>
       <ul className="privacy-cnt">
         <li>
-          <a href="https://google.com">Conditio of Use</a>
+          <a href="https://google.com">Condition of Use</a>
         </li>
         <li>
           <a href="https://google.com">

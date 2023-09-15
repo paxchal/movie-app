@@ -22,7 +22,7 @@ function Header() {
             />
           </div>
           <div className="right-region">
-            <p>Sign in</p>
+            <button className="signin-button">Sign in</button>
             <div>
               <a href="https://google.com">
                 <img src={Menu} alt="Menu Icon" />
@@ -46,7 +46,7 @@ function Header() {
               </p>
             </div>
             <div>
-              <button className="btn btn-home btn-dark">
+              <button className="btn btn-home ">
                 <div>
                   <img className="play-icon" src={Play} alt="Play Icon" />
                 </div>
@@ -55,7 +55,7 @@ function Header() {
               </button>
             </div>
           </div>
-          <div></div>
+          <div className="empty-hero-space"></div>
         </div>
       </div>
     </header>

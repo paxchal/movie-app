@@ -501,6 +501,7 @@ nav ul li:hover {
 .sugessted-movies {
   grid-column: 2/-1;
   grid-row: 4 / 8;
+  margin-top: 1rem;
 }
 .suggested-movies-img {
   width: 100%;

@@ -778,8 +778,13 @@ nav ul li:hover {
     grid-template-columns: 1fr;
   }
   .featured-movie {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
+
+  .see-more {
+    font-size: 1rem;
+  }
+
   .socials-cnt {
     gap: 2rem;
   }
@@ -821,5 +826,13 @@ nav ul li:hover {
 @media (max-width: 320px) {
   .hero {
     grid-template-columns: 18rem 1fr;
+  }
+
+  .featured-movie {
+    font-size: 1.4rem;
+  }
+
+  .see-more {
+    font-size: 0.8rem;
   }
 }

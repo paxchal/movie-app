@@ -66,14 +66,13 @@ function MovieDetails() {
               />
             )}
           </div>
-          <p className="movie-details-title">{movieDetails.title}</p>
-          <p className="movie-details-rating">
-            <span>
-              <img className="star-icon" src={Star} alt="Star Icon" />
-            </span>
-            <span>{movieDetails.vote_average} </span>| 10{" "}
+          <p className="movie-details-title" data-testid="movie-title">
+            {movieDetails.title}
           </p>
-          <div className="movie-desctiption">
+          <p className="movie-details-rating">
+            <div data-testid="runtime">{movieDetails.runtime} </div>mins
+          </p>
+          <div className="movie-desctiption" data-testid="movie-overview">
             <p>{movieDetails.overview}</p>
           </div>
           <div className="movie-details-cta-cnt ">

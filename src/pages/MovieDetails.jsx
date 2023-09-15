@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
-import Star from "../icons/Star.png";
 import TwoTickets from "../icons/Two Tickets.png";
 import List from "../icons/List.png";
 import SuggestedMovies from "../icons/Suggested movie.png";

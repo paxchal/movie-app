@@ -7,7 +7,7 @@ function Movie() {
     <section className="movies-cont">
       <div className="center">
         <div className="movies-title">
-          <p className="featured-movie">Top Movie</p>
+          <p className="featured-movie">Top Movies</p>
           <a className="see-more" href="https://google.com">
             <span>See more</span> <span> &#62;</span>
           </a>

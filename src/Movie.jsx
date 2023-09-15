@@ -8,7 +8,7 @@ function Movie() {
       <div className="center">
         <div className="movies-title">
           <p className="featured-movie">Top Movies</p>
-          <a className="see-more" href="https://google.com">
+          <a className="see-more" href="https://hngx-stage-2.netlify.app/">
             <span>See more</span> <span> &#62;</span>
           </a>
         </div>

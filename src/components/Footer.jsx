@@ -23,15 +23,15 @@ function Footer() {
       </div>
       <ul className="privacy-cnt">
         <li>
-          <a href="https://google.com">Condition of Use</a>
+          <a href="https://hngx-stage-2.netlify.app/">Condition of Use</a>
         </li>
         <li>
-          <a href="https://google.com">
+          <a href="https://hngx-stage-2.netlify.app/">
             Privacy <span>&#38;</span> Policy
           </a>
         </li>
         <li>
-          <a href="https://google.com">Press Room</a>
+          <a href="https://hngx-stage-2.netlify.app/">Press Room</a>
         </li>
       </ul>
       <div className="copyright-cnt">

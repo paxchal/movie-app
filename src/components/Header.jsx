@@ -24,7 +24,7 @@ function Header() {
           <div className="right-region">
             <button className="signin-button">Sign in</button>
             <div>
-              <a href="https://google.com">
+              <a href="https://hngx-stage-2.netlify.app/">
                 <img className="menu-icon" src={Menu} alt="Menu Icon" />
               </a>
             </div>

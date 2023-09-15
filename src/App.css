@@ -681,7 +681,7 @@ nav ul li:hover {
     font-size: 1.1rem;
   }
   .main-logo {
-    width: 13rem;
+    width: 12rem;
   }
 }
 
@@ -737,8 +737,8 @@ nav ul li:hover {
   }
 
   .title-head {
-    font-size: 3.8rem;
-    line-height: 4.8rem;
+    font-size: 3.4rem;
+    line-height: 4.6rem;
   }
 
   .description {
@@ -757,9 +757,16 @@ nav ul li:hover {
   .socials-cnt {
     gap: 4rem;
   }
+  .main-logo {
+    width: 10rem;
+  }
 }
 
 @media (max-width: 500px) {
+  .title-head {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
   .movie-card-li {
     grid-template-columns: 1fr;
   }
@@ -777,9 +784,18 @@ nav ul li:hover {
   .privacy-cnt {
     gap: 1rem;
     font-size: 0.7rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .hero {
-    grid-template-columns: 22rem 1fr;
+    grid-template-columns: 16rem 1fr;
+  }
+  .main-logo {
+    width: 7rem;
+  }
+  .menu-icon {
+    width: 2rem;
   }
 }

@@ -25,7 +25,7 @@ function Header() {
             <button className="signin-button">Sign in</button>
             <div>
               <a href="https://google.com">
-                <img src={Menu} alt="Menu Icon" />
+                <img className="menu-icon" src={Menu} alt="Menu Icon" />
               </a>
             </div>
           </div>

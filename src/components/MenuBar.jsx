@@ -20,7 +20,7 @@ function MenuBar() {
             </div>
             <p className="nav-name">Home</p>
           </li>
-          <li>
+          <li className="active">
             <div>
               <img
                 className="nav-icons"
@@ -28,7 +28,7 @@ function MenuBar() {
                 alt="MovieProjector Icon"
               />
             </div>
-            <p className="nav-name">Movies</p>
+            <p className="nav-name ">Movies</p>
           </li>
           <li>
             <div>

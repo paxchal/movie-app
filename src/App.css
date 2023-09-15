@@ -368,6 +368,10 @@ nav ul li:hover {
   background-color: rgba(248, 231, 235, 0.404);
   color: #be123c;
 }
+.active {
+  background-color: rgba(248, 231, 235, 0.404);
+  color: #be123c;
+}
 
 .nav-icons {
   width: 1.6rem;

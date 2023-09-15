@@ -9,16 +9,16 @@ function Footer() {
     <footer>
       <div className="socials-cnt">
         <div>
-          <img src={Facebook} alt="Facebook Icon" />
+          <img className="socials-logo" src={Facebook} alt="Facebook Icon" />
         </div>
         <div>
-          <img src={Instagram} alt="Instagram Icon" />
+          <img className="socials-logo" src={Instagram} alt="Instagram Icon" />
         </div>
         <div>
-          <img src={Twitter} alt="Twitter Icon" />
+          <img className="socials-logo" src={Twitter} alt="Twitter Icon" />
         </div>
         <div>
-          <img src={Youtube} alt="Youtube Icon" />
+          <img className="socials-logo" src={Youtube} alt="Youtube Icon" />
         </div>
       </div>
       <ul className="privacy-cnt">

@@ -12,8 +12,9 @@ function Movie() {
             <span>See more</span> <span> &#62;</span>
           </a>
         </div>
-
-        <MovieList />
+        <div className="small-screen-center">
+          <MovieList />
+        </div>
       </div>
     </section>
   );

@@ -1007,6 +1007,9 @@ nav ul li:hover {
 }
 
 @media (max-width: 480px) {
+  .main-logo {
+    width: 6rem;
+  }
   .nav-region {
     display: none;
   }
@@ -1023,6 +1026,7 @@ nav ul li:hover {
   .search-input {
     height: 2.6rem;
     border-radius: 6px;
+    font-size: 1rem;
   }
 }
 
@@ -1043,6 +1047,21 @@ nav ul li:hover {
     z-index: 0;
   }
 }
+@media (max-width: 370px) {
+  .top-bar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .right-region {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: flex-end;
+    margin-right: 1rem;
+  }
+  .search-region {
+    grid-column: 1/3;
+  }
+}
 
 @media (max-width: 320px) {
   .hero {
@@ -1060,8 +1079,14 @@ nav ul li:hover {
   .see-more {
     font-size: 0.8rem;
   }
+  .search-input {
+    height: 2rem;
+  }
 
   .search-region {
     min-width: 7rem;
+  }
+  .main-logo {
+    width: 5rem;
   }
 }

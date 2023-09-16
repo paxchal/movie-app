@@ -15,7 +15,7 @@ function Header() {
           <div>
             <img className="main-logo" src={logo} alt="Movie Logo" />
           </div>
-          <div>
+          <div className="search-region">
             <MovieSearch />
           </div>
           <div className="right-region">

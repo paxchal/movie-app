@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import MovieCard from "./MovieCard";
 
 function MovieSearch() {
@@ -19,7 +19,7 @@ function MovieSearch() {
 
   const fetchSearchSuggestions = (term) => {
     setLoading(true);
-    // Replace 'YOUR_API_KEY' with your actual TMDB API key
+
     fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&query=${term}&page=1&include_adult=false`
     )
@@ -35,8 +35,8 @@ function MovieSearch() {
   };
 
   return (
-    <div>
-      <form className="search-region">
+    <div className="form-cnt">
+      <form>
         <input
           className="search-input"
           type="text"

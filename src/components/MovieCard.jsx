@@ -11,36 +11,35 @@ class MovieCard extends Component {
     const posterUrl = baseImageUrl + movie.poster_path;
 
     return (
-      <div className="movie-card" data-testid="movie-card">
-        <img
-          className="poster-img"
-          data-testid="movie-poster"
-          src={posterUrl}
-          alt={movie.title}
-        />
+      <div className="link-container">
+        <Link to={`/movie/${movie.id}`} className="view-movie-details">
+          <div className="movie-card" data-testid="movie-card">
+            <img
+              className="poster-img"
+              data-testid="movie-poster"
+              src={posterUrl}
+              alt={movie.title}
+            />
 
-        <p className="movie-country">USA, 2021 {movie.country}</p>
+            <p className="movie-country">USA, 2021 {movie.country}</p>
 
-        <h2 className="movie-title" data-testid="movie-title">
-          {movie.title}
-        </h2>
-        <p className="movie-rating">
-          <img
-            className="movie-rating-icon"
-            src={MovieRating}
-            alt="Movie Rating Icon"
-          />
-          {movie.rating}
-        </p>
+            <h2 className="movie-title" data-testid="movie-title">
+              {movie.title}
+            </h2>
+            <p className="movie-rating">
+              <img
+                className="movie-rating-icon"
+                src={MovieRating}
+                alt="Movie Rating Icon"
+              />
+              {movie.rating}
+            </p>
 
-        <p className="release-date" data-testid="movie-release-date">
-          Release Date: {movie.release_date}
-        </p>
-        <div className="link-container">
-          <Link to={`/movie/${movie.id}`} className="view-movie-details">
-            View Movie Details
-          </Link>
-        </div>
+            <p className="release-date" data-testid="movie-release-date">
+              Release Date: {movie.release_date}
+            </p>
+          </div>
+        </Link>
       </div>
     );
   }

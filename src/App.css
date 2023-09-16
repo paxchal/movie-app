@@ -250,31 +250,14 @@ header {
 .movie-rating-icon {
   width: 100%;
 }
-.link-container {
-  display: flex;
-}
 
 .view-movie-details:link,
 .view-movie-details:visited {
-  margin-top: 0.6rem;
   text-decoration: none;
   border: none;
-  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+  color: black;
+}
 
-  display: flex;
-  padding: 0.3rem 0.6rem;
-  font-size: 0.9rem;
-  color: #be123dd2;
-  font-weight: 500;
-  border-radius: 3px;
-}
-.view-movie-details:hover,
-.view-movie-details:active {
-  font-size: 0.9rem;
-  color: #ffffff;
-  font-weight: 500;
-  background-color: #be123c;
-}
 /*  FOOTER REGION */
 
 footer {

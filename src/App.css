@@ -444,6 +444,36 @@ nav ul li:hover {
   height: 30rem;
   max-width: 119rem;
   border-radius: 2rem;
+  position: relative;
+}
+.play-trailer-btn {
+  position: absolute;
+  z-index: 3;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.play-trailer-btn button {
+  background-color: rgba(232, 232, 232, 0.205);
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.play-trailer-btn p {
+  color: #e8e8e8;
+  font-size: 0.8rem;
+}
+
+.watch-icon {
+  width: 2.8rem;
 }
 
 .trailer-thumbnail {

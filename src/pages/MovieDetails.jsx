@@ -7,6 +7,8 @@ import SuggestedMovies from "../icons/Suggested movie.png";
 import ExpandArrow from "../icons/Expand Arrow.png";
 import MenuBar from "../components/MenuBar";
 
+import Watch from "../icons/watch.png";
+
 const API_KEY = `${process.env.REACT_APP_API_KEY}`;
 const API_URL = "https://api.themoviedb.org/3/movie/";
 
@@ -64,6 +66,12 @@ function MovieDetails() {
                 alt="Trailer Thumbnail"
               />
             )}
+            <div className="play-trailer-btn">
+              <button>
+                <img className="watch-icon" src={Watch} alt="Watch Icon" />
+              </button>
+              <p>Watch Trailer</p>
+            </div>
           </div>
           <p className="movie-details-title" data-testid="movie-title">
             {movieDetails.title}

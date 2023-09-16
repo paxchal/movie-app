@@ -461,6 +461,9 @@ nav ul li:hover {
 }
 .play-trailer-btn button {
   background-color: rgba(232, 232, 232, 0.205);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   height: 5rem;
   width: 5rem;

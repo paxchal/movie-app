@@ -5,6 +5,7 @@ import logo from "../icons/Logo.png";
 import Menu from "../icons/Menu.png";
 import Rating from "../icons/Rating.png";
 import Play from "../icons/icon-play.png";
+import MovieSearch from "./MovieSearch";
 
 function Header() {
   return (
@@ -14,12 +15,8 @@ function Header() {
           <div>
             <img className="main-logo" src={logo} alt="Movie Logo" />
           </div>
-          <div className="search-region">
-            <input
-              className="search-input"
-              type="text"
-              placeholder="What do you want to watch?"
-            />
+          <div>
+            <MovieSearch />
           </div>
           <div className="right-region">
             <button className="signin-button">Sign in</button>

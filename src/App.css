@@ -39,8 +39,9 @@ header {
 }
 
 .search-region {
+  display: flex;
   flex: 1;
-  max-width: 40rem;
+  max-width: 50rem;
   min-width: 18rem;
   margin: 0 2rem;
 
@@ -50,6 +51,7 @@ header {
 .search-input {
   flex: 1;
   background: transparent;
+  width: 100%;
   font-size: 1.4rem;
   height: 3rem;
   color: #d1d5db;
@@ -184,6 +186,33 @@ header {
 .btn div {
   display: flex;
   align-items: center;
+}
+
+/*  SEARCH INPUT STYLES */
+
+.suggestions {
+  max-height: 40rem;
+  max-width: 20rem;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: absolute;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.suggestions ul {
+  list-style: none; /* Remove bullet points from the suggestions list */
+  padding: 0; /* Remove padding from the suggestions list */
+}
+
+.suggestions li {
+  margin: 5px 0; /* Add margin between individual suggestions */
+  cursor: pointer;
+}
+
+.suggestions li:hover {
+  background-color: #f0f0f0;
 }
 
 /*    FEATURED REGION */
@@ -720,9 +749,6 @@ nav ul li:hover {
     grid-template-columns: 1fr 1fr;
   }
 
-  .search-region {
-    display: none;
-  }
   .signin-button {
     display: none;
   }
